@@ -304,8 +304,6 @@ header nav a {
 
 /** About page **/
 
-.container .about-page {}
-
 .top-content_about-page img {
     margin-bottom: 3%;
 }
@@ -344,8 +342,85 @@ header nav a {
     border-radius: 15px;
     background-color: white;
     border: 3px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+.middle-content_about-page div button:hover {
+    padding: 3% 8%;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    border: 3px solid black;
 }
 
 .bottom-content_about-page {
     padding-bottom: 3%;
+}
+
+
+/** CONTACT PAGE **/
+
+.hero_contact-page {
+    background: url("../img/city-night-bg.jpeg");
+    background-size: cover;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 3%;
+}
+
+.hero_contact-page h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.hero_contact-page p {
+    text-align: center;
+    width: 50%;
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.contact-info_contact-page {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6%;
+}
+
+.contact-info_contact-page h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.form_contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+
+.form_contact-page form .question {
+    margin: 5%;
+}
+
+.question_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question_flex .input_flex {
+    width: 48%;
+}
+
+.question input {
+    width: 100%;
+}
+
+.message {
+    align-content: initial;
 }
